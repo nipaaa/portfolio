@@ -10,13 +10,16 @@ const Contact = () => {
                 <div className='col-lg-5 col-sm-12 my-auto '>
                     <Form>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                            <Form.Label>Email address</Form.Label>
+                            <Form.Control type="text" placeholder="Name" />
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                             <Form.Control type="email" placeholder="name@email.com" />
                         </Form.Group>
+                        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                            <Form.Control type="text" placeholder="Subject" />
+                        </Form.Group>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                            <Form.Label>Message</Form.Label>
-                            <Form.Control as="textarea" rows={3} />
-                        
+                            <Form.Control as="textarea" placeholder="Message"  rows={3} />
                         </Form.Group>
                        
                     </Form>
