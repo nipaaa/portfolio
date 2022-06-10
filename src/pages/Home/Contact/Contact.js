@@ -1,14 +1,16 @@
-import { Button } from 'bootstrap';
 import React from 'react';
 import { Form } from 'react-bootstrap';
+import '../../shared/Header/Header.css'
 
 const Contact = () => {
     return (
         <div className='container'>
-            <h1>Contact Me</h1>
             <div className='row'>
                 <div className='col-lg-5 col-sm-12 my-auto '>
-                    <Form>
+                <h1>Contact Me</h1>
+                    <Form action='mailto:akternipa941@gmail.com'
+                        method='POST'
+                        encType='multipart/form-data'>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                             <Form.Control type="text" placeholder="Name" />
                         </Form.Group>
@@ -19,11 +21,14 @@ const Contact = () => {
                             <Form.Control type="text" placeholder="Subject" />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                            <Form.Control as="textarea" placeholder="Message"  rows={3} />
+                            <Form.Control as="textarea" placeholder="Message" rows={3} />
                         </Form.Group>
-                       
+                        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                            <Form.Control type="submit" value="Send" />
+                        </Form.Group>
+
                     </Form>
-                   
+
                 </div>
                 <div className='col-lg-7 col-lag-12'>
                     <div className='resume rounded-2 p-5'>
@@ -44,7 +49,7 @@ const Contact = () => {
 
 
 
-        </div>
+        </div >
     );
 };
 
