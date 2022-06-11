@@ -6,26 +6,27 @@ const Contact = () => {
     return (
         <div className='container'>
             <div className='row'>
-                <div className='col-lg-5 col-sm-12 my-auto '>
+                <div className='col-lg-5 col-sm-12 my-auto resume pt-5 pb-4 px-3'>
                 <h1>Contact Me</h1>
                     <Form action='mailto:akternipa941@gmail.com'
                         method='POST'
-                        encType='multipart/form-data'>
+                        encType='text/plain'
+                        name='EmailForm'>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                            <Form.Control type="text" placeholder="Name" />
+                            <Form.Control type="text" placeholder="Name" name="name" />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                            <Form.Control type="email" placeholder="name@email.com" />
+                            <Form.Control type="email" placeholder="name@email.com" name="email" />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                            <Form.Control type="text" placeholder="Subject" />
+                            <Form.Control type="text" placeholder="Subject" name="subject" />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                            <Form.Control as="textarea" placeholder="Message" rows={3} />
+                            <Form.Control as="textarea" placeholder="Message" name="message" rows={3} />
                         </Form.Group>
-                        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                            <Form.Control type="submit" value="Send" />
-                        </Form.Group>
+                        
+                            <input className='w-100 app my-auto text-white  text-decoration-none resume px-4 py-1 rounded-2' type="submit" value="Send" />
+                        
 
                     </Form>
 
