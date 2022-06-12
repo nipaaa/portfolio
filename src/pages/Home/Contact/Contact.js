@@ -5,9 +5,9 @@ import '../../shared/Header/Header.css'
 const Contact = () => {
     return (
         <div className='container'>
-            <div className='row'>
-                <div className='col-lg-5 col-sm-12 my-auto resume pt-5 pb-4 px-3'>
-                <h1>Contact Me</h1>
+            <div className='row resume p-5'>
+                <div className='col-lg-5 col-sm-12'>
+                <h1 className='mb-4'>Contact Me</h1>
                     <Form action='mailto:akternipa941@gmail.com'
                         method='POST'
                         encType='text/plain'
@@ -32,7 +32,7 @@ const Contact = () => {
 
                 </div>
                 <div className='col-lg-7 col-lag-12'>
-                    <div className='resume rounded-2 p-5'>
+                    <div className='ps-5 '>
                         <h6 className='myColor'>Contact Information</h6>
                         <hr />
                         <p><span className='myColor'>Name:</span> Nipa Akter</p>
